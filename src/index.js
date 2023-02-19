@@ -4,8 +4,12 @@ const app = express()
 
 app.use("/static", express.static(path.join(__dirname, 'static')))
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.send(`path on ${req.url}`)
+})
+
+app.get('/pageOne', (req, res) => {
+    res.send('page ONE')
 })
 
 
