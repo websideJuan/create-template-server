@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
-app.use("/static", express.static(path.join(__dirname, 'static')))
+app.use("/static", express.static(path.join(__dirname, '../App mern-stack/dist')))
 
 app.get('/', (req, res) => {
     res.send(`path on ${req.url}`)
