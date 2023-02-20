@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h2>post</h2>
+
+<% for (let i = 0; i < post.length; i++ ) {%>
+    <articles>
+        <h5><%= post[i].id %></h5>
+        <a href="#">
+            <p><%= post[i].title%></p>
+        </a>
+        <p><%= post[i].body.slice(0, 100)%></p>
+    </articles>
+<%}%>
+<%- include('partials/footer') %>
+
